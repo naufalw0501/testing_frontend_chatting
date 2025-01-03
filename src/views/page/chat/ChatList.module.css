@@ -1,0 +1,9 @@
+/* Container utama */
+.container {
+    width: 100dvw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #F9F9F9;
+  }

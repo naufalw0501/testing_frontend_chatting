@@ -1,0 +1,28 @@
+.container-navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    align-items: center; 
+    background-color: white;
+    text-align: center; 
+    overflow: auto;
+    z-index: 3;
+    position: fixed;
+    cursor: default;
+    bottom: 0px; 
+    right: 0px; 
+    opacity: 1;
+    transition: 0.5s;
+    box-shadow: 0 10px 12px rgba(0, 0, 0, 0.2);
+    padding: 1.5dvh 4dvw;
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+}
+
+.container-navbar > button {
+    display: flex;
+    flex-direction: column; /* Menumpuk ikon dan teks */
+    align-items: center; /* Menengahkan secara horizontal */
+    justify-content: center; /* Menengahkan secara vertikal */
+    gap: 5
+}
