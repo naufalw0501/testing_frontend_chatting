@@ -14,7 +14,7 @@ function Navbar(props: { [key: string]: any }) {
     //---------FUNCTIONS---------//
     return (
         <>
-            <div style={{ display: (location.pathname === "/") ? "none" : "flex" }}>
+            <div style={{ display: (location.pathname === "/" || location.pathname === "/chat/chatting") ? "none" : "flex" }}>
                 <div className="container-navbar">
                     <button onClick={()=> navigate('/chat')} style={{color : ((location.pathname.startsWith("/chat") ? "#18837D" : "#5F6368"))}}>
                         <IoIosChatboxes size={24} />

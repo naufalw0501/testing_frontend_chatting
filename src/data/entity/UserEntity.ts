@@ -1,6 +1,6 @@
 class UserEntity {
-    name?: string;
-    email?: string;
+    name: string;
+    email: string;
 
     constructor(object: UserEntity) {
         this.name = object.name;

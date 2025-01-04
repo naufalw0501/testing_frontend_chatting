@@ -9,12 +9,13 @@ import { useNavigate } from "react-router-dom";
 import AppContext from '../../../Context';
 import Backdrop from '../../component/backdrop/Backdrop';
 import { MdOutlineAccountCircle } from 'react-icons/md';
+import { UserEntity } from '../../../data/entity/UserEntity';
 
 const Home = () => {
     const navigate = useNavigate();
     const context = useContext(AppContext);
     const setContextUserEntity = context.setContextUserEntity;
-    const [accountList, setAccountList] = useState<{ name: string, email: string }[]>([
+    const [accountList, setAccountList] = useState<UserEntity[]>([
         { name: "Naufal Wijaya", email: "naufal.wijaya9a@gmail.com" },
         { name: "Wijaya Naufal", email: "wijaya.naufal9a2@gmail.com" },
     ])

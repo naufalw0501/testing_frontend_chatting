@@ -8,6 +8,8 @@ import { UserEntity } from "./data/entity/UserEntity";
 import Navbar from "./views/layout/navbar/Navbar";
 const Home = lazy(() => import("./views/page/home/Home"));
 const ChatList = lazy(() => import("./views/page/chat/ChatList"));
+const Chatting = lazy(() => import("./views/page/chat/Chatting"));
+const NewChat = lazy(() => import("./views/page/chat/NewChat"));
 const Setting = lazy(() => import("./views/page/setting/Setting"));
 
 function App() {
@@ -48,6 +50,8 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/chat" element={<ChatList />} />
+              <Route path="/chat/new_chat" element={<NewChat />} />
+              <Route path="/chat/chatting" element={<Chatting />} />
               <Route path="/setting" element={<Setting />} />
             </Routes>
           </Suspense>
